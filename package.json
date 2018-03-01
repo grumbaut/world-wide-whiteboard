@@ -5,10 +5,13 @@
   "main": "index.js",
   "author": "instructors@fullstackacademy.com",
   "scripts": {
-    "start": "webpack -w & nodemon server.js"
+    "start": "webpack -w & node server.js",
+    "postinstall": "/./node_modules/webpack/bin/webpack.js"
   },
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "path": "^0.12.7",
+    "socket.io": "^2.0.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
