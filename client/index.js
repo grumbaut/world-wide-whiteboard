@@ -18,8 +18,8 @@ whiteboard.on('draw', (start, end, color) => {
 
 socket.on('drawData', (event) => {
   const { start, end, color} = event;
-  console.log(event);
-  draw(start, end, color);
+  console.log('log');
+  draw(start, end, color, false);
 });
 
 socket.on('state', (state)=> {
