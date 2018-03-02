@@ -4,7 +4,7 @@ const app = express();
 const socketio = require('socket.io');
 var state = [];
 
-const server = app.listen(1337, function () {
+const server = app.listen(process.env.PORT, function () {
   console.log('The server is listening on port 1337!');
 });
 
