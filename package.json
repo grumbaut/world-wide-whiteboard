@@ -4,9 +4,12 @@
   "description": "socket.io workshop @ Fullstack Academy",
   "main": "index.js",
   "author": "instructors@fullstackacademy.com",
+  "engines": {
+    "node": "8.9.1"
+  },
   "scripts": {
     "start": "webpack -w & node server.js",
-    "postinstall": "/./node_modules/webpack/bin/webpack.js"
+    "postinstall": "./node_modules/webpack/bin/webpack.js"
   },
   "dependencies": {
     "express": "^4.12.3",
