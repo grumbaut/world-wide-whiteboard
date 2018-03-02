@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "webpack -w & node server.js",
-    "build": "node node_modules/webpack/bin/webpack.js --display-error-details"
+    "build": "node node_modules/webpack/bin/webpack.js --display-error-details",
+    "postinstall": "node run build"
   },
   "dependencies": {
     "express": "^4.12.3",
